@@ -11,9 +11,9 @@ services:
       - DB_PORT=5002
       - DB_USER=root
       - DB_PASSWORD=Flexxus2023**
-      - DB_NAME=sistema_rrhh
+      - DB_NAME=sistema_rrhh_demo
       - JWT_SECRET=your_jwt_secret_key_minimum_32_chars
-      - FRONTEND_URL=http://10.250.0.68:3002
+      - FRONTEND_URL=http://10.250.0.68:3004
       - EMAIL_ENABLED=false
       - SMTP_HOST=smtp.gmail.com
       - SMTP_PORT=587
@@ -52,7 +52,7 @@ services:
         - "traefik.http.routers.${SERVICE_NAME}-https.tls.certresolver=myresolver"
         - "traefik.http.services.${SERVICE_NAME}.loadbalancer.server.port=80"      
     environment:
-      - REACT_APP_API_BASE_URL=http://10.250.0.68:3001/api
+      - REACT_APP_API_BASE_URL=http://10.250.0.68:3003/api
       - TZ=America/Argentina/Cordoba
     ports:
       - "3004:80"

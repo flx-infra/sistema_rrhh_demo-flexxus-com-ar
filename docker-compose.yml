@@ -27,7 +27,7 @@ services:
       - DB_POOL_LIMIT=300
       - DB_ACQUIRE_TIMEOUT_MS=40000
     ports:
-      - "3001:3001"
+      - "3003:3001"
     volumes:
       - backend_uploads:/app/uploads
     networks:
@@ -55,7 +55,7 @@ services:
       - REACT_APP_API_BASE_URL=http://10.250.0.68:3001/api
       - TZ=America/Argentina/Cordoba
     ports:
-      - "3002:80"
+      - "3004:80"
     networks:
       - traefik
     logging:

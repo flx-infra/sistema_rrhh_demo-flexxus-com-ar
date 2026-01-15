@@ -37,7 +37,7 @@ services:
       options:
         loki-url: ${LOKI_URL}  
   frontend:
-    image: fabreguesm/sistema_rrhh_front:1.0.63
+    image: fabreguesm/sistema_rrhh_front:1.0.64
     deploy:
       placement:
         constraints: ["${NODE}"]  

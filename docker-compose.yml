@@ -24,7 +24,7 @@ services:
       - VPN_ENDPOINT_REMOTE=https://10.150.253.253/api/?type=op&cmd=%3Cshow%3E%3Cglobal-protect-gateway%3E%3Ccurrent-user%3E%3Cgateway%3EGW-Flexxus_TELECOM%3C/gateway%3E%3C/current-user%3E%3C/global-protect-gateway%3E%3C/show%3E&key=LUFRPT14bmhIMG8vVkVQR25rbFI2L1FCTlp0MEs5dGc9Rmx0RzAwREx0anRFakg3cEdYdHppQ3l3NXVCSzZ3L1haeUtvNExISDQ5cDZGVGdjOGV3QnpoSkEvSDEzeGpXOVFPRmEyVkFJQnFhVE5LTG83ejFMckE9PQ==
       - VPN_ENDPOINT_PROCOM_REMOTO=https://10.150.253.253/api/?type=op&cmd=%3Cshow%3E%3Cglobal-protect-gateway%3E%3Ccurrent-user%3E%3Cgateway%3EGW-CLARO%3C/gateway%3E%3C/current-user%3E%3C/global-protect-gateway%3E%3C/show%3E&key=LUFRPT14bmhIMG8vVkVQR25rbFI2L1FCTlp0MEs5dGc9Rmx0RzAwREx0anRFakg3cEdYdHppQ3l3NXVCSzZ3L1haeUtvNExISDQ5cDZGVGdjOGV3QnpoSkEvSDEzeGpXOVFPRmEyVkFJQnFhVE5LTG83ejFMckE9PQ==
       - VPN_ENDPOINT_PROCOM_PRESENCIAL=https://10.150.253.253/api/?type=op&cmd=%3Cshow%3E%3Cglobal-protect-gateway%3E%3Ccurrent-user%3E%3Cgateway%3EGW-Internal%3C/gateway%3E%3C/current-user%3E%3C/global-protect-gateway%3E%3C/show%3E&key=LUFRPT14bmhIMG8vVkVQR25rbFI2L1FCTlp0MEs5dGc9Rmx0RzAwREx0anRFakg3cEdYdHppQ3l3NXVCSzZ3L1haeUtvNExISDQ5cDZGVGdjOGV3QnpoSkEvSDEzeGpXOVFPRmEyVkFJQnFhVE5LTG83ejFMckE9PQ==
-      - DB_POOL_LIMIT=600
+      - DB_POOL_LIMIT=40
       - DB_ACQUIRE_TIMEOUT_MS=40000
     ports:
       - "3003:3001"

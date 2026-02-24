@@ -2,7 +2,7 @@ version: '3.6'
 
 services:
   backend:
-    image: fabreguesm/sistema_rrhh_demo_back:1.1.8
+    image: fabreguesm/sistema_rrhh_demo_back:1.1.9
     deploy:
       placement:
         constraints: ["${NODE}"]  
@@ -37,7 +37,7 @@ services:
       options:
         loki-url: ${LOKI_URL}  
   frontend:
-    image: fabreguesm/sistema_rrhh_demo_front:1.1.7
+    image: fabreguesm/sistema_rrhh_demo_front:1.1.8
     deploy:
       placement:
         constraints: ["${NODE}"]  
